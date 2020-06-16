@@ -60,7 +60,7 @@ class InstallPlugin(private val registrar: Registrar) : MethodCallHandler {
                 Log.d("android plugin", "installApk $filePath $appId")
                 try {
                     installApk(filePath, appId)
-                    result.success("Success")
+                    result.success("Success ew")
                 } catch (e: Throwable) {
                     result.error(e.javaClass.simpleName, e.message, null)
                 }
